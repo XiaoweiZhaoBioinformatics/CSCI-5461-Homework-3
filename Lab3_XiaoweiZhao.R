@@ -154,5 +154,6 @@ merged_3 <- merge(merged_degree, clustering_coef, by = "Protein")
 ### Select proteins that qualify all the criteria. 
 selected_proteins <- merged_3[merged_3$mapped_network>10 & merged_3$clustering_coefficient > 0.2 & merged_3$literature_curated == 0, ]
 selected_proteins <- data.frame(selected_proteins)
+
 ### I selected RBM3 protein to discuss its function. 
 neighbor_list_all[["RBM3"]]
